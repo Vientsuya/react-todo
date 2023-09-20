@@ -12,7 +12,7 @@ function TodoAdd({ setTasks }) {
       {
         id: prev[prev.length - 1].id + 1,
         taskName: taskName,
-        state: "pending"
+        status: "pending"
       }
     ]);
 

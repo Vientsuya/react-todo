@@ -1,11 +1,11 @@
 import TodoListItem from './TodoListItem'
-function TodoList({ tasks }) {
+function TodoList({ setTasks, tasks }) {
   return (
     <>
       <h2>Task List</h2>
       <ul>
         {[...tasks].reverse().map((task) => (
-          <TodoListItem taskName={task.taskName} taskStatus={task.state} key={task.id} />
+          <TodoListItem task={task} setTasks={setTasks} key={task.id} />
         ))}
       </ul>
     </>

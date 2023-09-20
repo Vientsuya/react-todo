@@ -7,7 +7,7 @@ function App() {
     {
       id: 1,
       taskName: 'Default hello task',
-      state: 'pending'
+      status: 'pending'
     }
   ])
 
@@ -15,7 +15,7 @@ function App() {
     <>
       <div className='flex items-center flex-col m-12'>
         <TodoAdd setTasks={setTasks} />
-        <TodoList tasks={tasks} />
+        <TodoList tasks={tasks} setTasks={setTasks}/>
       </div>
     </>
   )
