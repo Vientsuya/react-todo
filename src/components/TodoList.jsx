@@ -4,8 +4,8 @@ function TodoList({ tasks }) {
     <>
       <h2>Task List</h2>
       <ul>
-        {tasks.map((task) => (
-          <TodoListItem taskName={task.taskName} key={task.id}/>
+        {[...tasks].reverse().map((task) => (
+          <TodoListItem taskName={task.taskName} taskStatus={task.state} key={task.id} />
         ))}
       </ul>
     </>

@@ -7,7 +7,7 @@ function App() {
     {
       id: 1,
       taskName: 'Default hello task',
-      state: 'active'
+      state: 'pending'
     }
   ])
 
